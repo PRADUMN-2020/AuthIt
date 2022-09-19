@@ -132,7 +132,7 @@ function ProductDetailPage(props) {
           content={`Details of Token ${productId}`}
         ></meta>
       </Head>
-      <div className='flex flex-1 flex-wrap justify-start items-start md:mx-14 md:pt-8'>
+      <div className='flex flex-1  justify-start items-start md:mx-14 md:pt-8 bg-slate-800'>
         <ProductCard
           isOwner={isOwner}
           manufacturer={props.manufacturer}
@@ -153,8 +153,8 @@ function ProductDetailPage(props) {
           productId={productId}
           metamaskConnected={metamaskConnected}
         />
-        <div className='m-4 p-4 overflow-hidden flex-grow'>
-          <h2 className='my-6 mx-6 text-3xl font-extrabold text-gray-900 text-left'>
+        <div className='m-4 p-4  flex-grow'>
+          <h2 className='my-6 mx-6 text-3xl font-extrabold text-slate-400 text-left'>
             TimeLine
           </h2>
           <TimeLine history={props.history} />

@@ -3,7 +3,7 @@ const TimeLine = props => {
 
   console.log(props);
   return (
-    <ol class='relative border-l border-gray-200 dark:border-gray-700'>
+    <ol class='relative border-1 border-gray-200 dark:border-gray-700 '>
       <li class='mb-10 ml-6'>
         <span class='flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900'>
           <svg
@@ -19,7 +19,7 @@ const TimeLine = props => {
             />
           </svg>
         </span>
-        <h3 class='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
+        <h3 class='flex items-center mb-1 text-lg font-semibold text-slate-200 dark:text-white'>
           Created by {`${props.history[0]._manufacturer}`}
         </h3>
         <time class='block mb-2 text-sm font-medium leading-none text-indigo-600'>
@@ -47,7 +47,7 @@ const TimeLine = props => {
                   />
                 </svg>
               </span>
-              <h3 class='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
+              <h3 class='flex items-center mb-1 text-lg font-semibold text-slate-200 dark:text-white'>
                 Purchased by {`${transaction._to} at ${transaction._price} Wei`}
               </h3>
               <time class='block mb-2 text-sm font-medium leading-none text-indigo-600'>

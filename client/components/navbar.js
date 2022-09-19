@@ -32,11 +32,11 @@ const Navbar = props => {
     <Disclosure as='nav' className='bg-wh mb-16'>
       {({ open }) => (
         <>
-          <div className='mx-auto bg-white px-2 sm:px-6 lg:px-8 shadow-md fixed top-0 w-screen z-50'>
+          <div className='mx-auto bg-black px-2 sm:px-6 lg:px-8 shadow-md fixed top-0 w-screen z-50'>
             <div className='relative flex items-center justify-between h-16'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
-                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-800'>
+                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-grey-800'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
                     <XIcon className='block h-6 w-6' aria-hidden='true' />
@@ -65,8 +65,8 @@ const Navbar = props => {
                         <a
                           className={classNames(
                             item.current
-                              ? 'bg-gray-100 text-indigo-600'
-                              : 'text-gray-900 hover:bg-indigo-600 hover:text-white',
+                              ? 'bg-slate-800 text-white'
+                              : 'text-indigo-500 hover:bg-slate-800 hover:text-indigo-600',
                             'px-3 py-2 rounded-md text-sm font-medium'
                           )}
                           aria-current={item.current ? 'page' : undefined}

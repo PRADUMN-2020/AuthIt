@@ -78,7 +78,7 @@ function NewBrandPage(props) {
         <meta name='description' content='Create a new brand on Buysafe'></meta>
       </Head>
       <Metamask open={open} setOpen={setOpen} />
-      <div className='flex items-start justify-center py-12 px-4 sm:px-6 lg:px-8'>
+      <div className='flex items-start justify-center py-12 px-4 sm:px-6 lg:px-8 bg-slate-800'>
         <div className='max-w-md w-full space-y-8'>
           <div>
             <img
@@ -86,7 +86,7 @@ function NewBrandPage(props) {
               src='/logo.svg'
               alt='BuySafe'
             />
-            <h2 className='mt-6 text-center text-3xl font-extrabold text-gray-900'>
+            <h2 className='mt-6 text-center text-3xl font-extrabold text-white'>
               Create your own Brand
             </h2>
             <p className='font-medium mt-2 text-center text-sm text-indigo-600'>
@@ -94,7 +94,7 @@ function NewBrandPage(props) {
             </p>
           </div>
           <div className='mt-8 space-y-9'>
-            <div className='rounded-md shadow-sm space-y-1'>
+            <div className='rounded-md  shadow-sm space-y-1'>
               <div>
                 <label htmlFor='email-address' className='sr-only'>
                   Brand Name
